@@ -1,0 +1,7 @@
+import hashlib
+
+def check_sha256_hash(input_string, target_hash):
+    # Calculer le hash SHA-256 de la chaîne d'entrée
+    hash_object = hashlib.sha256(input_string.encode())
+    calculated_hash = hash_object.hexdigest()
+    
